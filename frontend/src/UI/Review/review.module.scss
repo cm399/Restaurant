@@ -1,0 +1,67 @@
+@import "src/variables";
+
+.review, .reply{
+  width: 100%;
+  background: $bg;
+  box-shadow: 0 1px 60px rgba(34, 36, 40, 0.04);
+  text-align: left;
+  padding: 1.8rem;
+
+  .top{
+    display: inline-flex;
+    align-items: center;
+
+    .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        margin: 0 0.6rem 0 0;
+        width: 60px;
+        border-radius: 30px;
+      }
+    }
+
+    .name{
+      h2{
+        font-size: 16px;
+        margin: 0;
+      }
+
+      p{
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+
+  .stars{
+    color: #FFC107;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: right;
+
+    span{
+      margin-right: 0.2rem;
+    }
+  }
+
+  .bottomLinks {
+    display: flex;
+
+    p{
+      color: $darkPink;
+      text-decoration: underline;
+      cursor: pointer;
+      margin: 0 8px 0 0;
+    }
+  }
+
+}
+
+.reply{
+  width: auto;
+  margin: 1rem;
+  border: 1px solid $textColor;
+}

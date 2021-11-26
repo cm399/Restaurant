@@ -1,0 +1,60 @@
+@import "src/variables";
+
+.users{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  overflow: auto;
+
+  thead tr {
+    background-color: $darkPink;
+    color: $bg;
+    text-align: left;
+  }
+
+  th, td {
+    padding: 12px 15px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: 2px solid $darkPink;
+  }
+
+  .delete{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $darkPink;
+    display: inline;
+    margin: 1rem 8px 1rem 0;
+  }
+}
+
+.submit{
+  height: 40px;
+  background: $darkPink;
+  border: none;
+  outline: none;
+  color: $bg;
+  font: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0.4rem 0;
+  border-radius: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.error{
+  margin: 0;
+  font-size: 14px;
+}

@@ -1,0 +1,36 @@
+@import "src/variables";
+
+.feedback{
+  margin: 3rem 0;
+
+  h3{
+    margin: 1rem 0 -0.4rem 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h2{
+    margin: 0 0 0.4rem 0;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback .reviews{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback .reviews{
+    grid-template-columns: 1fr;
+  }
+}

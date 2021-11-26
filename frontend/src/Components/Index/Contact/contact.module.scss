@@ -1,0 +1,51 @@
+@import "src/variables";
+
+.contact{
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .info{
+    align-self: center;
+
+    h2{
+      margin: 0;
+      font-size: 36px;
+      font-weight: 900;
+    }
+
+    .line{
+      margin: 0.4rem 0 2rem 0;
+    }
+
+    p{
+      margin: 0.4rem 0;
+      font-size: 18px;
+      font-weight: 500;
+
+      span{
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  .map img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 60px rgba(34, 36, 40, 0.1);
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .contact{
+    grid-template-columns: 1fr;
+
+    .map{
+      text-align: center;
+      margin-top: 2rem;
+      img{
+        width: 70%;
+      }
+    }
+  }
+}

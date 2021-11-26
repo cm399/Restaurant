@@ -1,0 +1,51 @@
+@import "src/variables";
+
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem 0;
+
+  .text{
+    margin-top: 2rem;
+
+    img{
+      width: 200px;
+      transform: rotate(20deg);
+      margin-left: 4rem;
+    }
+
+    h1{
+      font-size: 52px;
+      font-weight: 900;
+      color: $darkPink;
+      line-height: 110%;
+      margin: 1rem 0 0.6rem 0;
+    }
+
+    p{
+      margin: 0;
+    }
+  }
+
+  .image{
+    text-align: right;
+
+    img{
+      width: 110%;
+      transform: translate(0, 10%);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero{
+    grid-template-columns: 1fr;
+
+    .image{
+      text-align: center;
+      img{
+        width: 60%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "src/variables";
+
+.feature{
+  width: 100%;
+  background: $bg;
+  box-shadow: 0 1px 60px rgba(34, 36, 40, 0.04);
+  text-align: left;
+  padding: 1.8rem;
+
+  img{
+    width: 50px;
+  }
+
+  h2{
+    font-size: 18px;
+    margin: 1rem 0 0 0;
+  }
+
+  p{
+    font-size: 14px;
+    margin: 0;
+  }
+}

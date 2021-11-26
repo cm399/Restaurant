@@ -1,0 +1,81 @@
+@import "src/variables";
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+
+  h1{
+    color: $darkPink;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .bars{
+    font-size: 1.4rem;
+    display: none;
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: left 0.4s ease;
+
+    li{
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: opacity 0.4s ease;
+
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+
+    .auth a, .auth p{
+      padding: 8px 14px;
+      background: $darkPink;
+      color: $bg;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 6px;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar{
+
+    .bars{
+      font-size: 1.4rem;
+      display: block;
+      right: 1rem;
+      top: 1rem;
+      z-index: +11000;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      left:-100%;
+      top: 0;
+      margin: 0;
+      background: $lightPink;
+      width: 100%;
+      height: 100vh;
+      z-index: +10000;
+
+      li{
+        margin: 1rem 0;
+      }
+    }
+  }
+}

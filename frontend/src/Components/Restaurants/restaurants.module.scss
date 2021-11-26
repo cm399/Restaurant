@@ -1,0 +1,33 @@
+@import "src/variables";
+
+.restaurants{
+  min-height: 90vh;
+  margin: 1rem -8px 2rem -8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.pages{
+  display: flex;
+  margin: 2rem 0;
+
+  p{
+    margin: 0 1rem 0 0;
+    padding: 1rem 1.6rem;
+    box-shadow: 0 1px 60px rgba(34, 36, 40, 0.1);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1224px){
+  .restaurants{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .restaurants{
+    grid-template-columns: 1fr;
+  }
+}
