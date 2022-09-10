@@ -1,5 +1,7 @@
 # Restaurant
 
+This is a React-based Restaurant web application that has the following features
+
 - User is able to create an account and log in. 
 
 - Implement 3 roles with different permission levels
